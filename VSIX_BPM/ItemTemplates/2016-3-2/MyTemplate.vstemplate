@@ -1,0 +1,24 @@
+﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>WorkflowName</DefaultName>
+    <Name>BPM流程</Name>
+    <Description>&lt;创建一个新流程&gt;</Description>
+    <ProjectType>Web</ProjectType>
+    <ProjectSubType>CSharp</ProjectSubType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem TargetFileName="\Workflow\EditPage\E_$fileinputname$.aspx" ReplaceParameters="true">E.aspx</ProjectItem>
+    <ProjectItem TargetFileName="\Workflow\EditPage\E_$fileinputname$.aspx.cs" ReplaceParameters="true">E.aspx.cs</ProjectItem>
+    <ProjectItem TargetFileName="\Workflow\ApprovePage\A_$fileinputname$.aspx" ReplaceParameters="true">A.aspx</ProjectItem>
+    <ProjectItem TargetFileName="\Workflow\ApprovePage\A_$fileinputname$.aspx.cs" ReplaceParameters="true">A.aspx.cs</ProjectItem>
+    <ProjectItem TargetFileName="\Workflow\ViewPage\V_$fileinputname$.aspx" ReplaceParameters="true">V.aspx</ProjectItem>
+    <ProjectItem TargetFileName="\Workflow\ViewPage\V_$fileinputname$.aspx.cs" ReplaceParameters="true">V.aspx.cs</ProjectItem>
+  </TemplateContent>
+<WizardExtension> 
+<Assembly>WFWizard, Version=1.0.0.16, Culture=neutral, PublicKeyToken=a07ec1338cfce805</Assembly> 
+<FullClassName>WFWizard.RootWizardImpl</FullClassName> 
+</WizardExtension>
+</VSTemplate>
